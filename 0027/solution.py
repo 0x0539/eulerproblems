@@ -25,9 +25,9 @@ def primes(a, b):
 best = 0
 best_a = 0
 best_b = 0
-for a in xrange(-9999, 10000):
+for a in xrange(-999, 1000):
   print(a)
-  for b in xrange(-9999, 10000):
+  for b in xrange(-999, 1000):
     value = len(set(primes(a, b)))
     if value > best:
       best = value

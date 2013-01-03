@@ -11,8 +11,6 @@ def is_palindrome(array):
 
 s = 0
 for i in xrange(1000000):
-  binary = [digit for digit in digits(i, 2)]
-  decimal = [digit for digit in digits(i, 10)]
-  if is_palindrome(binary) and is_palindrome(decimal):
+  if is_palindrome(list(digits(i, 2))) and is_palindrome(list(digits(i, 10))):
     s += i
 print(s)
